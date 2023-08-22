@@ -1,0 +1,132 @@
+.offer {
+    background: #F5F0EC;
+}
+
+.offer__texts {
+    margin: 0 200px;
+    padding: 120px 0 96px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 709px;
+}
+
+.offer__nav {
+    color: var(--green, #1B5B31);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.12px;
+    margin-bottom: 16px;
+}
+
+.offer__headline {
+    color: var(--black, #111);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+}
+
+.offer__headline em {
+    color: var(--black, #111);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 115%;
+}
+
+.offer__text {
+    color: var(--black, #111);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+}
+
+.offer__cards {
+    display: flex;
+    padding: 0px 88px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+    align-self: stretch;
+    background: var(--grey, #F5F0EC);
+}
+
+.offer__card {
+    display: flex;
+    padding: 48px 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 28px;
+    background: var(--white, #FFF);
+    width: 33%;
+    height: 370px;
+    box-sizing: border-box;
+    margin-bottom: 160px;
+}
+
+.offer__card img {
+    height: 44px;
+    max-width: 48px;
+    margin-bottom: 32px;
+    object-fit: initial;
+}
+
+.offer__card h2 {
+    color: var(--black, #111);
+    /* Montserrat/H-3 */
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 32.2px */
+    letter-spacing: -1.4px;
+    margin-bottom: 12px;
+}
+
+.offer__card span {
+    color: var(--black, #111);
+
+    /* Inter/Body-small */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
+}
+
+.offer__card a {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    gap: 10px;
+    color: var(--green, #1B5B31);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border-bottom: 1px solid var(--green, #1B5B31);
+}
+
+.offer__card a:hover {
+    color: gray;
+}
+
+.offer__card a img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0;
+}
