@@ -40,16 +40,19 @@ closeIcon.onclick = () => {
 
 const gradient = document.querySelector(".gradient");
 const loadMore = document.querySelector(".projects__button");
+const projectSection = document.querySelector(".projects");
 
 loadMore.onclick = () => {
 
     if (loadMore.classList.contains("loaded")) {
         gradient.classList.remove("loaded");
         loadMore.classList.remove("loaded");
+        projectSection.classList.remove("loaded");
         loadMore.innerHTML = "Rozwiń";
     } else {
         gradient.classList.add("loaded");
         loadMore.classList.add("loaded");
+        projectSection.classList.add("loaded");
         loadMore.innerHTML = "Zwiń";
     }
 };
