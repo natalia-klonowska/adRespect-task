@@ -25,16 +25,17 @@ function showImg(index) {
 
 showImg(slideIndex);
 
-const search = document.querySelector(".nav__search");
-const searchIcon = document.querySelector(".search-icon");
-const closeIcon = document.querySelector(".close-icon");
+
+const search = document.querySelector(".search");
+const searchIcon = document.querySelector(".search-open");
+const closeIcon = document.querySelector(".search-close");
 
 searchIcon.onclick = () => {
-    search.classList.add("active");
+    search.classList.add("open");
 };
 
 closeIcon.onclick = () => {
-    search.classList.remove("active");
+    search.classList.remove("open");
 };
 
 
