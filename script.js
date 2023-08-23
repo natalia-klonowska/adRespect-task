@@ -5,7 +5,7 @@ function moveSlider(direction) {
 };
 
 function showImg(index) {
-    const slider = document.querySelectorAll('.slider');
+    const slider = document.querySelectorAll(".slider");
     
     if (index > slider.length) {
         slideIndex = 1;
@@ -56,3 +56,17 @@ loadMore.onclick = () => {
         loadMore.innerHTML = "Zwiń";
     }
 };
+
+
+const popup = document.querySelector(".popup");
+
+function closePopup() {
+  popup.classList.remove("open");
+}
+
+document.querySelectorAll(".projects__photo img").forEach(image => {
+    image.onclick = () => {
+        popup.classList.add("open");
+        document.querySelector(".popup-photo img").src = image.getAttribute('src');
+    }
+})

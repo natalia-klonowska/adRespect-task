@@ -12,6 +12,7 @@
     bottom: 44px;
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
     transition: all 0.7s ease-in-out;
+    pointer-events: none; 
 }
 
 .projects__texts {
@@ -119,4 +120,38 @@
     width: 16px;
     height: 16px;
 
+}
+
+.popup { 
+    display: none; 
+}
+
+.popup.open { 
+    display: block; 
+}
+
+.popup-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.8);
+    z-index: 1;
+
+}
+.popup-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.popup-photo img {
+    height: 90vh;
 }
