@@ -10,6 +10,7 @@
     position: absolute;
     bottom: 44px;
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+    transition: all 0.5s ease-in-out;
 }
 
 .projects__texts {
@@ -79,12 +80,27 @@
     font-weight: 400;
     line-height: 150%; /* 24px */
     z-index: 1;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .projects__button:hover {
     border: 1px solid var(--black, #1B5B31);
     color: var(--black, #1B5B31);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gradient.loaded {
+    height: 0;
+}
+
+.projects__button.loaded {
+    position: static;
+    margin: auto;
+    margin-bottom: 44px;
+}
+
+.projects__button.loaded::after {
+    transform: rotate(180deg);
 }
 
 .projects__button::after {
@@ -98,6 +114,5 @@
     content: url("../images/icons/arrow-down.svg");
     width: 16px;
     height: 16px;
-    transform: rotate(180deg);
 
 }
