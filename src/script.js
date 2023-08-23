@@ -40,21 +40,23 @@ closeIcon.onclick = () => {
 
 
 const gradient = document.querySelector(".gradient");
-const loadMore = document.querySelector(".projects__button");
+const loadMore = document.querySelector(".load-button");
 const projectSection = document.querySelector(".projects");
 
 loadMore.onclick = () => {
 
     if (loadMore.classList.contains("loaded")) {
-        gradient.classList.remove("loaded");
         loadMore.classList.remove("loaded");
-        projectSection.classList.remove("loaded");
-        loadMore.innerHTML = "Rozwiń";
+        document.querySelector(".load-button div").innerHTML = "Rozwiń";
+        projectSection.style.paddingBottom = "2px";
+        gradient.style.height = "55%"
+        loadMore.style.bottom = "90px"
     } else {
-        gradient.classList.add("loaded");
         loadMore.classList.add("loaded");
-        projectSection.classList.add("loaded");
-        loadMore.innerHTML = "Zwiń";
+        document.querySelector(".load-button div").innerHTML = "Zwiń";
+        projectSection.style.paddingBottom = "90px";
+        gradient.style.height = "0px"
+        loadMore.style.bottom = "44px"
     }
 };
 
@@ -62,12 +64,12 @@ loadMore.onclick = () => {
 const popup = document.querySelector(".popup");
 
 function closePopup() {
-  popup.classList.remove("open");
+  popup.style.display = "none";
 }
 
-document.querySelectorAll(".projects__photo img").forEach(image => {
+document.querySelectorAll(".photo").forEach(image => {
     image.onclick = () => {
-        popup.classList.add("open");
-        document.querySelector(".popup-photo img").src = image.getAttribute('src');
+        popup.style.display = "block";
+        document.querySelector(".popup-photo").src = image.getAttribute('src');
     }
 })
