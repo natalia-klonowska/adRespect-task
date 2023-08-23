@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/index.html"],
+  content: ["./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -15,8 +15,8 @@ module.exports = {
         hoverGrey: '#808080',
       },
       content: {
-        arrowNav: 'url("/src/images/icons/arrow-nav.svg")',
-        arrowDown: 'url("/src/images/icons/arrow-down.svg")',
+        arrowNav: 'url("/images/icons/arrow-nav.svg")',
+        arrowDown: 'url("/images/icons/arrow-down.svg")',
       },
       boxShadow: {
         dark: '4px 4px 4px 4px rgba(0, 0, 0, 0.25)',
@@ -31,8 +31,8 @@ module.exports = {
         ButtonCenter: 'calc(50% - 61.5px)',
       },
       backgroundImage: {
-        intro: 'url("/src/images/photos/intro.jpeg")',
-        about: 'url("/src/images/photos/about.jpeg")',
+        intro: 'url("/images/photos/intro.jpeg")',
+        about: 'url("/images/photos/about.jpeg")',
         gradient: 'linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%)',
       },
     },
