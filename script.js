@@ -36,3 +36,20 @@ searchIcon.onclick = () => {
 closeIcon.onclick = () => {
     search.classList.remove("active");
 };
+
+
+const gradient = document.querySelector(".gradient");
+const loadMore = document.querySelector(".projects__button");
+
+loadMore.onclick = () => {
+
+    if (loadMore.classList.contains("loaded")) {
+        gradient.classList.remove("loaded");
+        loadMore.classList.remove("loaded");
+        loadMore.innerHTML = "Rozwiń";
+    } else {
+        gradient.classList.add("loaded");
+        loadMore.classList.add("loaded");
+        loadMore.innerHTML = "Zwiń";
+    }
+};
