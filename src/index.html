@@ -147,7 +147,7 @@
                         </span>
                     </div>
 
-                    <a href="#contact" class="flex p-0 items-center gap-[10px] text-green text-center font-inter text-base font-normal border-b border-b-green hover:text-hoverGrey">
+                    <a href="#about" class="flex p-0 items-center gap-[10px] text-green text-center font-inter text-base font-normal border-b border-b-green hover:text-hoverGrey">
                         Dowiedz się więcej
                         <img src="./images/icons/arrow.svg" alt="arrow down icon" class="w-4 h-4 mb-0">
                     </a>
@@ -193,120 +193,162 @@
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="about__left"></div>
+        <section id="about" class="flex justify-between items-center gap-16 bg-green h-screen">
+            <div class="h-full w-1/2 bg-about bg-cover bg-center"></div>
 
-            <div class="about__right">
-                <div class="about__texts">
-                    <span class="about__nav">O firmie</span>
-                    <h1 class="about__headline">Tworzymy <br> z <em>pasją</em></h1>
-                    <span class="about__text">
+            <div class="py-[135px] pr-[88px] pl-24 w-1/2 flex flex-col items-start box-border">
+                <div class="mb-[72px] text-white">
+                    <span class="text-grey font-inter text-xs leading-[18px] font-normal tracking-[-0.12px] inline-block pb-4">
+                        O firmie
+                    </span>
+
+                    <h1 class="text-grey font-mont text-5xl leading-[55.2px] tracking-[-1.44px] mb-10 font-medium">
+                        Tworzymy <br> z <em class="font-inter italic">pasją</em>
+                    </h1>
+
+                    <span class="font-inter font-normal text-base">
                         Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
                     </span>
                 </div>
 
-                <a href="#contact" class="about__button">
+                <a href="#contact" class="flex px-[22px] pt-3 pb-[14px] items-center gap-2 rounded-[200px] bg-none border border-grey text-grey text-center font-inter text-base font-normal hover:shadow-hoverButton">
                     Poznaj nas bliżej
-                    <img src="./images/icons/arrow-white.svg" alt="">
+                    <img src="./images/icons/arrow-white.svg" alt="arrow right icon" class="w-4 h-4">
                 </a>
             </div>
         </section>
 
-        <section class="projects" id="projects">
-            <div class="projects__texts">
-                <span class="projects__nav">Realizacje</span>
-                <h1 class="projects__headline">Nasze <em>projekty</em></h1>
+        <section id="projects" class="projects pt-[120px] pb-0.5 px-0 bg-beige relative transition-all duration-[0.7s] ease-in-out">
+            <div class="flex pl-[88px] flex-col items-start self-stretch pb-24">
+                <span class="text-green font-inter text-xs leading-[18px] tracking-[-0.12px] mb-4 font-normal">
+                    Realizacje
+                </span>
+
+                <h1 class="text-black font-mont text-5xl font-medium leading-[55.2px] tracking-[-1.44px]">
+                    Nasze <em class="italic font-inter">projekty</em>
+                </h1>
             </div>
 
-            <div class="projects__gallery">
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-1.jpg" alt="Photo showing one of the projects">
+            <div class="columns-3 gap-[43px]">
+                <div>
+                    <img src="./images/photos/projects-1.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-2.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-2.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-3.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-3.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-4.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-4.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-5.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-5.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-6.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-6.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-7.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-7.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-8.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-8.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
-                <div class="projects__photo">
-                    <img src="./images/photos/projects-9.jpg" alt="Photo showing one of the projects">
+                <div>
+                    <img src="./images/photos/projects-9.jpg" alt="Photo showing one of the projects" class="photo w-full mb-[42px] cursor-pointer">
                 </div>
             </div>
 
-            <button class="projects__button">Rozwiń</button>
-            <div class="gradient"></div>
+            <button class="group load-button absolute bottom-[90px] right-ButtonCenter flex px-[22px] pt-3 pb-[14px] items-center gap-2 rounded-[200px] border border-black text-black text-center font-inter text-base font-normal z-[1] button-transition hover:border-green hover:text-green hover:shadow-hoverButton">
+                <div>Rozwiń</div>
+                <img src="./images/icons/arrow-down-black.svg" alt="arrow down icon" class="w-4 h-4 group-hover:rotate-180">
+            </button>
 
-            <div class="popup">
-                <div class="popup-close" onclick="closePopup()"></div>
-                <div class="popup-photo">
-                    <img src="./images/photos/projects-1.jpg" alt="Photo showing one of the projects">
+            <div class="gradient photo w-full h-[55%] absolute bottom-[42px] bg-gradient pointer-events-none transition-all duration-[0.7s] ease-in-out"></div>
+
+            <div class="popup hidden">
+                <div class="fixed top-0 left-0 bottom-0 right-0 bg-[#000000cc] z-[1]" onclick="closePopup()"></div>
+                
+                <div class="flex items-center justify-center fixed top-[50vh] left-[50vw] z-[1] translate-x-[-50%] translate-y-[-50%]">
+                    <img src="./images/photos/projects-1.jpg" alt="Photo showing one of the projects" class="popup-photo h-[80vh]">
                 </div>
             </div>
         </section>
         
-        <section class="contact" id="contact">
-            <div class="contact__info">
-                <h1 class="contact__headline">
-                    Zostańmy w kontakcie! <br> Znajdziesz nas na <em>Instagramie</em>.
+        <section id="contact" class="flex py-[60px] px-[200px] flex-col justify-center items-center gap-[10px] bg-grey">
+            <div class="flex w-full py-[120px] px-[110px] items-end gap-16 bg-green">
+                <h1 class="inline-block w-3/4 text-grey font-mont text-[40px] leading-[48px] tracking-[-2px] font-normal">
+                    Zostańmy w kontakcie! <br> Znajdziesz nas na <em class="font-inter font-medium tracking-[1px]">Instagramie</em>.
                 </h1>
 
                 <div>
-                    <span class="contact__text">Śledź nasze najnowsze realizacje!</span>
-                    <button class="contact__button">Instagram</button>
+                    <span class="inline-block w-max text-grey font-inter text-base font-normal tracking-[-0.16px]">Śledź nasze <br> najnowsze realizacje!</span>
+                    <button class="flex px-6 pt-[10px] pb-3 items-center gap-[10px] rounded-[200px] bg-grey text-green text-center font-inter text-base font-normal mt-6">Instagram</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__contact">
-            <div class="line-1">
-                <img src="./images/logo-light.svg" alt="">
-                <div>
-                    <span>
+    <footer class="flex py-20 px-[200px] flex-col items-center gap-[120px] bg-black">
+        <div class="flex flex-col items-start gap-[62px] w-full">
+            <div class="flex justify-between items-center self-stretch">
+                <img src="./images/logo-light.svg" alt="giarddesign logo" class="h-[19px]">
+                
+                <div class="flex items-center gap-6">
+                    <span class="text-grey font-inter text-base font-normal tracking-[-0.16px]">
                         Daj znać, co możemy dla Ciebie zrobić!
                     </span>
-                    <button>Skontaktuj się z nami</button>
+
+                    <button class="flex px-6 pt-3 pb-[14px] items-center gap-[10px] rounded-[200px] bg-green text-grey text-center font-inter text-base font-normal">
+                        Skontaktuj się z nami
+                    </button>
                 </div>
             </div>
 
-            <div class="line"></div>
+            <div class="w-full h-px bg-grey"></div>
 
-            <div class="line-2">
-                <div class="links">
-                    <a href="">Kontakt</a>
-                    <a href="">Instagram</a>
-                    <a href="">Facebook</a>
-                    <a href="">LinkedIn</a>
+            <div class="flex justify-between items-start self-stretch">
+                <div class="flex items-center gap-12">
+                    <a href="" class="text-grey text-center font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        Kontakt
+                    </a>
+                    
+                    <a href="" class="text-grey text-center font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        Instagram
+                    </a>
+
+                    <a href="" class="text-grey text-center font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        Facebook
+                    </a>
+
+                    <a href="" class="text-grey text-center font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        LinkedIn
+                    </a>
                 </div>
                 
-                <div class="info">
-                    <span>000-000-000</span>
-                    <span>giarddesign@kontakt.pl</span>
+                <div class="flex items-start gap-12">
+                    <span class="text-grey font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        000-000-000
+                    </span>
+
+                    <span class="text-grey font-inter text-sm leading-[21px] tracking-[-0.14px] font-normal">
+                        giarddesign@kontakt.pl
+                    </span>
                 </div>
             </div>
         </div>
 
-        <div class="footer__info">
-            <span>Prawa zastrzeżone © 2022</span>
-            <div>
-                <span>made by</span>
-                <img src="./images/logo-adRespect.svg" alt="logo firmy adRespect">
+        <div class="flex justify-between items-center w-full">
+            <span class="text-grey font-inter text-base font-normal tracking-[-0.16px]">
+                Prawa zastrzeżone © 2022
+            </span>
+
+            <div class="flex items-center gap-4">
+                <span class="text-grey font-inter text-base font-normal tracking-[-0.16px]">
+                    made by
+                </span>
+
+                <img src="./images/logo-adRespect.svg" alt="logo firmy adRespect" class="h-[23px]">
             </div>
         </div>
     </footer>

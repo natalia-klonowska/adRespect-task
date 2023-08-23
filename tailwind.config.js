@@ -24,15 +24,17 @@ module.exports = {
         button: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
         hoverButton: '0px 4px 4px 0px rgba(0, 0, 0, 0.5)',
       },
-      dropShadow: {
-        text: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-      },
       height: {
         slide: 'calc(100vh - 72px)',
       },
+      spacing: {
+        ButtonCenter: 'calc(50% - 61.5px)',
+      },
       backgroundImage: {
         intro: 'url("/src/images/photos/intro.jpeg")',
-      }
+        about: 'url("/src/images/photos/about.jpeg")',
+        gradient: 'linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%)',
+      },
     },
   },
   plugins: [],
