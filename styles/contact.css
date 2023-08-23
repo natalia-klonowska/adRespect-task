@@ -41,6 +41,8 @@
 }
 
 .contact__text {
+    display: inline-block;
+    width: max-content;
     color: var(--grey, #F5F0EC);
 
     /* Inter/Body */
