@@ -941,7 +941,7 @@ video {
 }
 
 .bg-about {
-  background-image: url("/images/photos/about.jpeg");
+  background-image: url("../images/photos/about.jpeg");
 }
 
 .bg-gradient {
@@ -949,7 +949,7 @@ video {
 }
 
 .bg-intro {
-  background-image: url("/images/photos/intro.jpeg");
+  background-image: url("../images/photos/intro.jpeg");
 }
 
 .bg-none {
@@ -1311,12 +1311,12 @@ video {
 }
 
 .after\:content-arrowDown::after {
-  --tw-content: url("/images/icons/arrow-down.svg");
+  --tw-content: url("../images/icons/arrow-down.svg");
   content: var(--tw-content);
 }
 
 .after\:content-arrowNav::after {
-  --tw-content: url("/images/icons/arrow-nav.svg");
+  --tw-content: url("../images/icons/arrow-nav.svg");
   content: var(--tw-content);
 }
 
